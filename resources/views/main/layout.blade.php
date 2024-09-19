@@ -46,6 +46,8 @@
           <li><a href="{{route('index')}}" class="active">Home<br></a></li>
           <li><a href="{{route('about')}}">About</a></li>
           <li><a href="{{route('service')}}">Services</a></li>
+          <li><a href="{{route('value')}}">Values</a></li>
+          <li><a href="{{route('feature')}}">Features</a></li>
           <li><a href="{{route('portfolio')}}">Portfolio</a></li>
           <li><a href="{{route('team')}}">Team</a></li>
           <li><a href="{{route('blog')}}">Blog</a></li>
