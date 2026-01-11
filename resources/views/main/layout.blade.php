@@ -57,8 +57,11 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted flex-md-shrink-0" href="{{route('about')}}">Get Started</a>
-
+    @auth
+    <a class="btn-getstarted flex-md-shrink-0" href="{{ route('checkout') }}">VIP Üzv Ol</a>
+@else
+    <a class="btn-getstarted flex-md-shrink-0" href="{{ route('login') }}">VIP Üzv Ol</a>
+@endauth
     </div>
   </header>
 

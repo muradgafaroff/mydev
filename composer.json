@@ -6,12 +6,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "azpayments/kapitalbank": "^1.0",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "predis/predis": "^3.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "laravel/breeze": "^2.3",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
@@ -22,9 +24,18 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "AZPayments\\Kapitalbank\\": "packages/azpayments/kapitalbank/src/"
         }
     },
+
+    "repositories": [
+    {
+        "type": "path",
+        "url": "packages/azpayments/kapitalbank"
+    }
+    ],
+    
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
